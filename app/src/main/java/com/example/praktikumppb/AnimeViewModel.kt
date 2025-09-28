@@ -1,5 +1,8 @@
 package com.example.praktikumppb.viewmodel
 
+// This file is now replaced by MainViewModel.kt
+// Keep for backward compatibility if needed
+
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.praktikumppb.model.Anime
@@ -9,6 +12,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
+@Deprecated("Use MainViewModel instead")
 class AnimeViewModel : ViewModel() {
     private val _animeList = MutableStateFlow<List<Anime>>(emptyList())
     val animeList: StateFlow<List<Anime>> = _animeList
